@@ -1,0 +1,195 @@
+/* =========================================================
+   Fault Sentinel — Dashboard Stylesheet
+   Palette: Navy #0B1F3A · White #FFFFFF · Green #1FB56E
+            Black #0A0A0A · Orange #FF6A2B · Red #E63946
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"], .stMarkdown, .stText, p, span, div {
+    font-family: 'Poppins', 'Inter', sans-serif !important;
+}
+
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+
+/* Keep the header bar itself visible (it contains the sidebar
+   collapse/expand arrow) - just make it blend into the background.
+   NEVER set header{visibility:hidden}, or users can't re-open a
+   collapsed sidebar. */
+header[data-testid="stHeader"] {
+    background: transparent;
+    height: 2.6rem;
+}
+div[data-testid="stSidebarCollapsedControl"] button,
+button[kind="header"] {
+    color: #0B1F3A !important;
+}
+
+.stApp {
+    background: #F2F5FA;
+}
+
+/* ---------------- Sidebar ---------------- */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0B1F3A 0%, #132A4E 100%);
+    border-right: none;
+}
+section[data-testid="stSidebar"] * {
+    color: #FFFFFF !important;
+}
+section[data-testid="stSidebar"] div[role="radiogroup"] > label {
+    background: transparent;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    transition: background 0.15s ease;
+}
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
+    background: rgba(255,255,255,0.08);
+}
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.15);
+}
+/* Native multipage nav links */
+section[data-testid="stSidebarNav"] a {
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+section[data-testid="stSidebarNav"] a:hover {
+    background: rgba(255,255,255,0.08);
+}
+section[data-testid="stSidebarNav"] span {
+    color: #FFFFFF !important;
+}
+
+/* ---------------- Headings ---------------- */
+h1, h2, h3 {
+    color: #0B1F3A !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.3px;
+}
+
+/* ---------------- Cards ---------------- */
+.fs-card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 6px 18px rgba(11,31,58,0.06);
+    border: 1px solid rgba(11,31,58,0.05);
+}
+.fs-hero-card {
+    background: linear-gradient(135deg, #FF6A2B 0%, #FF8A50 100%);
+    border-radius: 20px;
+    padding: 24px 26px;
+    color: #FFFFFF;
+    box-shadow: 0 10px 24px rgba(255,106,43,0.28);
+}
+.fs-hero-card h3, .fs-hero-card p, .fs-hero-card span {
+    color: #FFFFFF !important;
+}
+.fs-metric-label {
+    color: #6B7A99;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+}
+.fs-metric-value {
+    color: #0B1F3A;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.fs-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.fs-pill-green  { background: #E6F8EF; color: #1FB56E; }
+.fs-pill-red    { background: #FDE7E9; color: #E63946; }
+.fs-pill-orange { background: #FFE8DB; color: #FF6A2B; }
+.fs-pill-navy   { background: rgba(11,31,58,0.08); color: #0B1F3A; }
+
+.fs-section-title {
+    color: #0B1F3A;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 6px 0 2px 0;
+}
+.fs-subtitle {
+    color: #6B7A99;
+    font-size: 0.88rem;
+    margin-bottom: 10px;
+}
+
+/* ---------------- Buttons ---------------- */
+.stButton > button, .stDownloadButton > button {
+    background: #FF6A2B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 0.55rem 1.4rem;
+    font-weight: 600;
+    transition: transform 0.1s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(255,106,43,0.25);
+}
+.stButton > button:hover, .stDownloadButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255,106,43,0.35);
+    color: #FFFFFF;
+}
+
+/* ---------------- Tabs ---------------- */
+.stTabs [data-baseweb="tab-list"] { gap: 6px; }
+.stTabs [data-baseweb="tab"] {
+    background: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    padding: 8px 18px;
+    color: #0B1F3A;
+    font-weight: 600;
+}
+.stTabs [aria-selected="true"] {
+    background: #0B1F3A !important;
+    color: #FFFFFF !important;
+}
+
+/* ---------------- Inputs ---------------- */
+.stNumberInput input, .stTextInput input { border-radius: 8px !important; }
+div[data-baseweb="select"] > div { border-radius: 8px !important; }
+
+/* ---------------- File uploader ---------------- */
+[data-testid="stFileUploader"] section {
+    background: #FFFFFF;
+    border: 1.5px dashed #FF6A2B;
+    border-radius: 14px;
+}
+
+/* ---------------- Result banners ---------------- */
+.fs-result-normal {
+    background: #E6F8EF;
+    border-left: 5px solid #1FB56E;
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+.fs-result-fault {
+    background: #FDE7E9;
+    border-left: 5px solid #E63946;
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+.fs-result-warn {
+    background: #FFE8DB;
+    border-left: 5px solid #FF6A2B;
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+
+/* Dataframe corners */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}

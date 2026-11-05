@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+.env
+.streamlit/secrets.toml
+desktop.ini
+.DS_Store
+
+# runtime database (contains admin hash + activity logs)
+database/*.db
+
+# full datasets are not public
+data/*.csv
+!data/sample/

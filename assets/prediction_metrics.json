@@ -1,0 +1,11 @@
+{
+  "window": 10,
+  "lstm_weight": 0.3,
+  "xgb_weight": 0.7,
+  "lstm_standalone_accuracy": 0.9149,
+  "xgboost_standalone_accuracy": 0.9361,
+  "hybrid_accuracy": 0.9379,
+  "hybrid_precision_weighted": 0.9394,
+  "hybrid_recall_weighted": 0.9379,
+  "hybrid_f1_weighted": 0.9367
+}
