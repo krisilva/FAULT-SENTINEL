@@ -35,7 +35,8 @@ The full training datasets (OpenDSS-simulated IEEE 13-bus feeder) are not includ
 ### Machine Learning-Based Fault Detection, Classification and Early Fault Prediction in Electrical Distribution Networks
 
 Undergraduate research project, BSc (Hons) Computer Science, NSBM Green University, Sri Lanka.
-Supervisor: Dr. Pabudi Abeyrathne
+Author : Kavirathna Rumesha Ishini Silva
+Supervisor: Dr. Pabudi Tashiya Abeyrathne
 
 ---
 
@@ -140,22 +141,14 @@ jupyter notebook notebooks/
 
 ## Data and System Availability
 The full datasets and trained models are available on request. A small sample is provided in `data/sample/`.
-To request access, please email **[your university email]** with your name, affiliation and intended use. Requests are considered subject to supervisor approval.
+To request access, please email:ishinisilva19@gmail.com with Kavirathna Rumesha Ishini Silva affiliation and intended use. Requests are considered subject to supervisor approval.
 
-## Citation
-The paper is currently [submitted / under review]. Citation details will be added after publication.
-
-```
-Silva, [Initials]. (2026). Fault Sentinel: Machine Learning-Based Fault Detection,
-Classification and Early Fault Prediction in Electrical Distribution Networks.
-Undergraduate thesis, NSBM Green University, Sri Lanka.
-```
 
 **OpenDSS reference:** R. C. Dugan and T. E. McDermott, "An open source platform for collaborating on smart grid research," IEEE PES General Meeting, 2011. doi: 10.1109/PES.2011.6039829
 
 ## Author and Supervisor
-- **Author:** Ishini Silva, [LinkedIn](https://www.linkedin.com/in/ishini-silva-196436257)
-- **Supervisor:** Dr. Pabudi Abeyrathne, NSBM Green University
+- **Author:** Kavirathna Rumesha Ishini Silva,NSBM Green University [LinkedIn](https://www.linkedin.com/in/ishini-silva-196436257)
+- **Supervisor:** Dr. Pabudi Tashiya Abeyrathne, NSBM Green University
 
 ## License
 [MIT / All rights reserved]
